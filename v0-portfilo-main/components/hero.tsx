@@ -67,7 +67,7 @@ export function Hero() {
             variants={item}
             className="font-heading text-6xl font-extrabold leading-[0.95] tracking-tight text-balance sm:text-7xl lg:text-8xl"
           >
-            ARIPRAKASH
+            ARIPRAKASH N
           </motion.h1>
 
           <motion.div variants={item} className="mt-6 space-y-1.5 font-mono">
