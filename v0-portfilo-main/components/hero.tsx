@@ -103,11 +103,11 @@ export function Hero() {
 
         {/* portrait / holographic frame */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-          className="relative mx-auto w-full max-w-sm"
-        >
+        initial={{ opacity: 0, scale: 0.92, x: 20 }}
+        animate={{ opacity: 1, scale: 1, x: 40 }}
+        transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+        className="relative mx-auto w-full max-w-[520px] lg:translate-x-12"
+        >   
           <div className="animate-float-slow relative">
             <div
               aria-hidden
