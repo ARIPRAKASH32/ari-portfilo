@@ -119,7 +119,7 @@ export function Hero() {
               <Image
                 src="/ari-portrait.png"
                 alt="Portrait of Ariprakash Nagaraj"
-                width={450}
+                width={500}
                 height={500}
                 priority
                 className="h-full w-full object-cover"
