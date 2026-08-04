@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#8b5cf6" />
-    </linearGradient>
-  </defs>
-  <rect width="100" height="100" rx="25" fill="#030712" stroke="url(#grad)" stroke-width="4"/>
-  <text x="50" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="900" fill="url(#grad)" text-anchor="middle" dominant-baseline="central" letter-spacing="1">AN</text>
+  <style>
+    rect { fill: #000; stroke: #fff; stroke-width: 4; }
+    text { fill: #fff; }
+    @media (prefers-color-scheme: light) {
+      rect { fill: #fff; stroke: #000; }
+      text { fill: #000; }
+    }
+  </style>
+  <rect width="100" height="100" rx="25"/>
+  <text x="50" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="46" font-weight="900" text-anchor="middle" dominant-baseline="central" letter-spacing="1">AN</text>
 </svg>
