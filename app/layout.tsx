@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     'Ariprakash Nagaraj — Full Stack Developer and AI Engineer building future digital experiences with React, the MERN stack, Spring Boot, and intelligent systems.',
   generator: 'v0.app',
   icons: {
-    icon: '/ari-portrait.png',
-    apple: '/ari-portrait.png',
+    icon: '/an-icon.svg',
+    apple: '/an-icon.svg',
   },
 }
 
