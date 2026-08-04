@@ -170,7 +170,7 @@ export function Stats() {
                           background:
                             lvl === 0
                               ? "var(--secondary)"
-                              : `color-mix(in oklch, #ffa116 ${lvl * 25}%, var(--secondary))`,
+                              : `color-mix(in oklch, #10b981 ${lvl * 25}%, var(--secondary))`,
                         }}
                       />
                     )
@@ -188,7 +188,7 @@ export function Stats() {
                     background:
                       l === 0
                         ? "var(--secondary)"
-                        : `color-mix(in oklch, #ffa116 ${l * 25}%, var(--secondary))`,
+                        : `color-mix(in oklch, #10b981 ${l * 25}%, var(--secondary))`,
                   }}
                 />
               ))}
