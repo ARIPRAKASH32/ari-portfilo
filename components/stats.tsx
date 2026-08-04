@@ -58,17 +58,17 @@ export function Stats() {
 
     // Fetch Live GitHub Repositories
     fetch('https://api.github.com/users/ARIPRAKASH32')
-      .then(res => res.json())
+      .then(res => res.ok ? res.json() : null)
       .then(data => {
-        if (data.public_repos) setGithubRepos(data.public_repos)
+        if (data && data.public_repos) setGithubRepos(data.public_repos)
       })
       .catch(err => console.error("GitHub API Error", err))
 
     // Fetch Live LeetCode Solved Problems
     fetch('https://alfa-leetcode-api.onrender.com/ARIPRAKASH_N/solved')
-      .then(res => res.json())
+      .then(res => res.ok ? res.json() : null)
       .then(data => {
-        if (data.solvedProblem) setLeetcodeSolved(data.solvedProblem)
+        if (data && data.solvedProblem) setLeetcodeSolved(data.solvedProblem)
       })
       .catch(err => console.error("LeetCode API Error", err))
       
