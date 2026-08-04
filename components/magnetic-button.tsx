@@ -8,11 +8,15 @@ export function MagneticButton({
   href,
   variant = "primary",
   className = "",
+  target,
+  rel,
 }: {
   children: ReactNode
   href: string
   variant?: "primary" | "ghost" | "accent"
   className?: string
+  target?: string
+  rel?: string
 }) {
   const ref = useRef<HTMLAnchorElement>(null)
   const [pos, setPos] = useState({ x: 0, y: 0 })
@@ -37,6 +41,8 @@ export function MagneticButton({
     <motion.a
       ref={ref}
       href={href}
+      target={target}
+      rel={rel}
       onMouseMove={onMove}
       onMouseLeave={() => setPos({ x: 0, y: 0 })}
       animate={{ x: pos.x, y: pos.y }}

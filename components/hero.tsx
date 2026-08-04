@@ -142,7 +142,7 @@ export function Hero() {
               <MagneticButton href="#projects" variant="primary" className="h-14 px-8 text-[15px] font-semibold rounded-2xl">
                 Explore Projects <ArrowUpRight className="h-5 w-5 ml-2" />
               </MagneticButton>
-              <MagneticButton href="#experience" variant="ghost" className="h-14 px-8 text-[15px] font-semibold rounded-2xl glass-panel border-border hover:bg-secondary">
+              <MagneticButton href="https://drive.google.com/file/d/1fP2qqDgzRHHglVBw7XRxaFCJAby9awGN/view?usp=sharing" target="_blank" rel="noopener noreferrer" variant="ghost" className="h-14 px-8 text-[15px] font-semibold rounded-2xl glass-panel border-border hover:bg-secondary">
                 <FileText className="h-5 w-5 mr-2" /> Resume
               </MagneticButton>
             </div>
