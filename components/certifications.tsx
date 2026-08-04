@@ -20,7 +20,7 @@ const CERTIFICATIONS: Certification[] = [
     issuer: "Forage",
     date: "Jan 2026",
     logoText: "TATA",
-    link: "#"
+    link: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_694ba7debeda68c47382749a_1767630377927_completion_certificate.pdf"
   },
   {
     id: "cert-2",
@@ -28,7 +28,7 @@ const CERTIFICATIONS: Certification[] = [
     issuer: "Forage",
     date: "Dec 2025",
     logoText: "Deloitte",
-    link: "#"
+    link: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_694ba7debeda68c47382749a_1766658794066_completion_certificate.pdf"
   }
 ]
 
