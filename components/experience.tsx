@@ -18,31 +18,17 @@ type Experience = {
 const EXPERIENCES: Experience[] = [
   {
     id: "exp-1",
-    role: "Full Stack Engineer Intern",
-    company: "TechNova Solutions",
-    logoText: "TN",
-    location: "San Francisco, CA (Remote)",
-    duration: "May 2025 – Present",
+    role: "Full Stack Intern",
+    company: "StartNet Venture Private Limited",
+    logoText: "SV",
+    location: "Salem",
+    duration: "Internship",
     description: [
-      "Architected and deployed a scalable microservices backend using Spring Boot and PostgreSQL, improving API response times by 35%.",
-      "Developed interactive front-end dashboards in React and Next.js for real-time data visualization.",
-      "Integrated secure JWT-based authentication and role-based access control (RBAC)."
+      "Developed and customized dynamic websites using WordPress.",
+      "Assisted in front-end design, plugin integration, and website optimization.",
+      "Collaborated with the team to enhance performance and user experience."
     ],
-    tech: ["React", "Next.js", "Spring Boot", "PostgreSQL", "Docker"]
-  },
-  {
-    id: "exp-2",
-    role: "Software Developer Intern",
-    company: "InnoSphere Labs",
-    logoText: "IS",
-    location: "New York, NY",
-    duration: "Jan 2025 – Apr 2025",
-    description: [
-      "Built an internal AI-powered code review tool using Python and OpenAI APIs, reducing PR review time by 20%.",
-      "Optimized legacy database queries, resulting in a 40% reduction in query execution time.",
-      "Collaborated closely with cross-functional teams using Agile methodologies."
-    ],
-    tech: ["Python", "Flask", "OpenAI", "MySQL", "AWS"]
+    tech: ["WordPress", "Frontend Design", "Plugin Integration", "Web Optimization"]
   }
 ]
 

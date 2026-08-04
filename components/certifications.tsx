@@ -16,26 +16,18 @@ type Certification = {
 const CERTIFICATIONS: Certification[] = [
   {
     id: "cert-1",
-    title: "AWS Certified Developer – Associate",
-    issuer: "Amazon Web Services",
-    date: "August 2025",
-    logoText: "AWS",
+    title: "Tata - GenAI Powered Data Analytics Job Simulation",
+    issuer: "Forage",
+    date: "Jan 2026",
+    logoText: "TATA",
     link: "#"
   },
   {
     id: "cert-2",
-    title: "Machine Learning Specialization",
-    issuer: "Stanford University / Coursera",
-    date: "June 2025",
-    logoText: "ML",
-    link: "#"
-  },
-  {
-    id: "cert-3",
-    title: "Advanced React Patterns",
-    issuer: "Frontend Masters",
-    date: "April 2025",
-    logoText: "React",
+    title: "Deloitte Australia - Technology Job Simulation",
+    issuer: "Forage",
+    date: "Dec 2025",
+    logoText: "Deloitte",
     link: "#"
   }
 ]
