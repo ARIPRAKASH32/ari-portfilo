@@ -10,6 +10,7 @@ import { Skills } from "@/components/skills"
 import { Projects } from "@/components/projects"
 import { Experience } from "@/components/experience"
 import { Certifications } from "@/components/certifications"
+import { Achievements } from "@/components/achievements"
 import { Stats } from "@/components/stats"
 import { Contact } from "@/components/contact"
 import { AriAssistant } from "@/components/ari-assistant"
@@ -30,6 +31,7 @@ export default function Page() {
           <Projects />
           <Experience />
           <Certifications />
+          <Achievements />
           <Stats />
           <Contact />
           <AriAssistant />
