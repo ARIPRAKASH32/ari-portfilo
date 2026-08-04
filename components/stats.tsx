@@ -64,13 +64,46 @@ export function Stats() {
       })
       .catch(err => console.error("GitHub API Error", err))
 
-    // Fetch Live LeetCode Solved Problems
-    fetch('https://alfa-leetcode-api.onrender.com/ARIPRAKASH_N/solved')
+    // Fetch Live LeetCode Solved Problems and Heatmap
+    fetch('/api/leetcode')
       .then(res => res.ok ? res.json() : null)
-      .then(data => {
-        if (data && data.solvedProblem) setLeetcodeSolved(data.solvedProblem)
+      .then(resData => {
+        if (!resData || !resData.data || !resData.data.matchedUser) return;
+        const user = resData.data.matchedUser;
+        const allSolved = user.submitStats?.acSubmissionNum?.[0]?.count;
+        if (allSolved) setLeetcodeSolved(allSolved);
+
+        const calendarStr = user.userCalendar?.submissionCalendar;
+        if (calendarStr) {
+          try {
+            const calendar = JSON.parse(calendarStr);
+            const today = new Date();
+            today.setHours(0,0,0,0);
+            const newHeat = Array.from({ length: WEEKS * DAYS }, () => 0);
+            
+            Object.entries(calendar).forEach(([timestampStr, count]) => {
+              const date = new Date(parseInt(timestampStr) * 1000);
+              date.setHours(0,0,0,0);
+              const daysAgo = Math.floor((today.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+              
+              if (daysAgo >= 0 && daysAgo < WEEKS * DAYS) {
+                 const index = (WEEKS * DAYS - 1) - daysAgo;
+                 let lvl = 0;
+                 const c = count as number;
+                 if (c > 0) lvl = 1;
+                 if (c > 3) lvl = 2;
+                 if (c > 6) lvl = 3;
+                 if (c >= 10) lvl = 4;
+                 newHeat[index] = Math.max(newHeat[index], lvl);
+              }
+            });
+            setHeat(newHeat);
+          } catch(e) {
+            console.error("Failed to parse LeetCode calendar", e);
+          }
+        }
       })
-      .catch(err => console.error("LeetCode API Error", err))
+      .catch(err => console.error("LeetCode Internal API Error", err))
       
   }, [])
 
