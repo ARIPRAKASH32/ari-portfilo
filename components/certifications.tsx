@@ -36,7 +36,7 @@ export function Certifications() {
   return (
     <section id="certifications" className="relative scroll-mt-24 py-32 overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-[50%] right-[10%] w-[30%] h-[30%] rounded-full bg-blue-500/10 blur-[120px]" />
+        <div className="absolute top-[50%] right-[10%] w-[30%] h-[30%] rounded-full bg-white/5 blur-[120px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-5">
@@ -59,7 +59,7 @@ export function Certifications() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {CERTIFICATIONS.map((cert, idx) => (
             <Reveal key={cert.id} delay={0.1 + idx * 0.1}>
-              <div className="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-border glass-panel transition-all duration-500 hover:border-primary/40 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(59,130,246,0.15)]">
+              <div className="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-border glass-panel transition-all duration-500 hover:border-primary/40 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(255,255,255,0.05)]">
                 
                 {/* Simulated Certificate Preview Banner */}
                 <div className="relative h-32 w-full bg-gradient-to-br from-secondary/80 to-background overflow-hidden border-b border-border/50">
@@ -87,7 +87,7 @@ export function Certifications() {
                       href={cert.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-xs font-bold text-primary hover:text-cyan-400 transition-colors"
+                      className="flex items-center gap-1.5 text-xs font-bold text-primary hover:text-white transition-colors"
                     >
                       Verify <ExternalLink className="h-3.5 w-3.5" />
                     </a>

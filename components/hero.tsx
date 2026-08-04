@@ -60,7 +60,7 @@ export function Hero() {
             scale: [1, 1.1, 0.9, 1] 
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute -left-[20%] top-10 h-[60vh] w-[60vh] rounded-full bg-primary/20 blur-[150px] mix-blend-screen"
+          className="absolute -left-[20%] top-10 h-[60vh] w-[60vh] rounded-full bg-white/10 blur-[150px] mix-blend-screen"
         />
         <motion.div
           animate={{ 
@@ -69,7 +69,7 @@ export function Hero() {
             scale: [1, 0.9, 1.1, 1] 
           }}
           transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-          className="absolute -right-[20%] bottom-0 h-[50vh] w-[50vh] rounded-full bg-purple-600/20 blur-[150px] mix-blend-screen"
+          className="absolute -right-[20%] bottom-0 h-[50vh] w-[50vh] rounded-full bg-neutral-500/10 blur-[150px] mix-blend-screen"
         />
 
         {/* Grid Pattern */}
@@ -85,16 +85,16 @@ export function Hero() {
 
         {/* Floating Technology Icons */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <motion.div className="absolute top-[20%] left-[10%] opacity-30 text-primary animate-float-slow" style={{ animationDelay: '0s' }}>
+          <motion.div className="absolute top-[20%] left-[10%] opacity-30 text-white/50 animate-float-slow" style={{ animationDelay: '0s' }}>
             <Code2 size={48} />
           </motion.div>
-          <motion.div className="absolute top-[60%] left-[15%] opacity-20 text-cyan-500 animate-float-fast" style={{ animationDelay: '1s' }}>
+          <motion.div className="absolute top-[60%] left-[15%] opacity-20 text-neutral-400 animate-float-fast" style={{ animationDelay: '1s' }}>
             <Database size={64} />
           </motion.div>
-          <motion.div className="absolute top-[30%] right-[12%] opacity-30 text-purple-500 animate-float-slow" style={{ animationDelay: '2s' }}>
+          <motion.div className="absolute top-[30%] right-[12%] opacity-30 text-neutral-500 animate-float-slow" style={{ animationDelay: '2s' }}>
             <Cpu size={56} />
           </motion.div>
-          <motion.div className="absolute bottom-[20%] right-[20%] opacity-20 text-pink-500 animate-float-fast" style={{ animationDelay: '3s' }}>
+          <motion.div className="absolute bottom-[20%] right-[20%] opacity-20 text-neutral-600 animate-float-fast" style={{ animationDelay: '3s' }}>
             <Layout size={40} />
           </motion.div>
         </div>
@@ -110,8 +110,8 @@ export function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-border glass-panel px-4 py-2 text-xs font-semibold tracking-wider text-muted-foreground shadow-sm"
           >
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-70" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-70" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
             </span>
             AVAILABLE FOR WORK
           </motion.div>
@@ -126,7 +126,7 @@ export function Hero() {
                        text-5xl sm:text-6xl md:text-7xl lg:text-[80px]"
           >
             Ariprakash <br className="hidden lg:block" />
-            <span className="text-glow bg-gradient-to-r from-primary via-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="text-glow bg-gradient-to-r from-white via-neutral-300 to-neutral-500 bg-clip-text text-transparent">
               Nagaraj.
             </span>
           </motion.h1>
@@ -176,9 +176,9 @@ export function Hero() {
           <div className="animate-float-slow relative">
             <div
               aria-hidden
-              className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-primary/30 to-purple-500/30 opacity-60 blur-3xl"
+              className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-tr from-white/20 to-neutral-500/20 opacity-60 blur-3xl"
             />
-            <div className="glass-panel relative aspect-[4/5] p-3 sm:p-5 rounded-[2rem] border border-primary/30 box-glow shadow-2xl shadow-primary/20">
+            <div className="glass-panel relative aspect-[4/5] p-3 sm:p-5 rounded-[2rem] border border-white/10 box-glow shadow-2xl shadow-white/5">
               <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
                 <Image
                   src="/ari-portrait.png"
@@ -195,8 +195,8 @@ export function Hero() {
                     <h3 className="font-heading text-xl font-bold text-foreground">Ariprakash N.</h3>
                     <p className="font-mono text-sm text-primary mt-1">Full Stack Engineer</p>
                   </div>
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 border border-primary/30 backdrop-blur-md">
-                    <ArrowUpRight className="h-5 w-5 text-primary" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 border border-white/20 backdrop-blur-md">
+                    <ArrowUpRight className="h-5 w-5 text-white" />
                   </div>
                 </div>
               </div>
@@ -206,9 +206,9 @@ export function Hero() {
             <motion.div 
               animate={{ y: [0, -10, 0] }} 
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -right-8 -top-8 glass-panel p-4 rounded-2xl border-primary/20 box-glow"
+              className="absolute -right-8 -top-8 glass-panel p-4 rounded-2xl border-white/10 box-glow"
             >
-              <Terminal className="h-8 w-8 text-cyan-400" />
+              <Terminal className="h-8 w-8 text-neutral-300" />
             </motion.div>
           </div>
         </motion.div>

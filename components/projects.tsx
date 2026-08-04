@@ -127,8 +127,8 @@ export function Projects() {
     <section id="projects" className="relative scroll-mt-24 py-28 overflow-hidden">
       {/* Premium Aurora Background & Floating Blobs */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-[0%] left-[-10%] w-[50%] h-[50%] rounded-full bg-primary/10 blur-[120px] mix-blend-screen" />
-        <div className="absolute bottom-[0%] right-[-10%] w-[50%] h-[50%] rounded-full bg-blue-600/10 blur-[150px] mix-blend-screen" />
+        <div className="absolute top-[0%] left-[-10%] w-[50%] h-[50%] rounded-full bg-white/5 blur-[120px] mix-blend-screen" />
+        <div className="absolute bottom-[0%] right-[-10%] w-[50%] h-[50%] rounded-full bg-neutral-500/10 blur-[150px] mix-blend-screen" />
         <div className="grid-fade absolute inset-0 opacity-[0.08]"
           style={{
             backgroundImage:
