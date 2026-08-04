@@ -118,7 +118,7 @@ export function Stats() {
         <Reveal delay={0.1} className="mt-6">
           <div className="overflow-hidden rounded-2xl border border-border glass p-6">
             <div className="mb-4 flex items-center gap-2 font-mono text-xs tracking-widest text-muted-foreground">
-              <Flame className="h-4 w-4 text-accent" /> CONTRIBUTION HEATMAP · LAST 6 MONTHS
+              <Flame className="h-4 w-4 text-accent" /> LEETCODE CONTRIBUTION HEATMAP · LAST 6 MONTHS
             </div>
             <div className="flex gap-[3px] overflow-x-auto pb-1">
               {Array.from({ length: WEEKS }).map((_, w) => (
