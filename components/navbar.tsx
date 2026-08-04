@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import { ThemeToggle } from "./theme-toggle"
 
 const LINKS = [
   { label: "About", href: "#about" },
@@ -56,12 +57,15 @@ export function Navbar() {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 md:inline-block"
-        >
-          Let&apos;s talk
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
+          <a
+            href="#contact"
+            className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+          >
+            Let&apos;s talk
+          </a>
+        </div>
 
         <button
           aria-label="Toggle menu"
@@ -90,6 +94,10 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
+            <div className="flex items-center justify-between px-4 py-3">
+              <span className="text-sm text-muted-foreground">Theme</span>
+              <ThemeToggle />
+            </div>
           </motion.nav>
         )}
       </AnimatePresence>
