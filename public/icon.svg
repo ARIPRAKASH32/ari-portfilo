@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="64" fill="#030712" stroke="#3B82F6" stroke-width="4" stroke-opacity="0.3"/>
+  <rect width="256" height="256" rx="64" fill="url(#grad)" opacity="0.15"/>
+  <text x="128" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="130" fill="#F8FAFC" text-anchor="middle">A<tspan fill="#3B82F6">N</tspan></text>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+</svg>
