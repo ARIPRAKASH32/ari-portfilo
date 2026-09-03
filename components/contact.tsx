@@ -208,11 +208,8 @@ export function Contact() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-border/50 text-sm text-muted-foreground">
+        <div className="flex flex-col sm:flex-row items-center justify-center pt-8 border-t border-border/50 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Ariprakash Nagaraj. All rights reserved.</p>
-          <p className="mt-2 sm:mt-0 flex items-center gap-1">
-            Built with <span className="text-primary hover:text-cyan-400 transition-colors">Next.js</span> & <span className="text-primary hover:text-cyan-400 transition-colors">Tailwind CSS</span>
-          </p>
         </div>
       </div>
     </footer>
