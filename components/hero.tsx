@@ -75,26 +75,26 @@ export function Hero() {
         {/* Grid Pattern */}
         <div
           aria-hidden
-          className="grid-fade absolute inset-0 opacity-[0.06]"
+          className="grid-fade absolute inset-0 opacity-[0.08]"
           style={{
             backgroundImage:
-              "linear-gradient(to right, #F8FAFC 1px, transparent 1px), linear-gradient(to bottom, #F8FAFC 1px, transparent 1px)",
+              "linear-gradient(to right, color-mix(in srgb, var(--foreground) 15%, transparent) 1px, transparent 1px), linear-gradient(to bottom, color-mix(in srgb, var(--foreground) 15%, transparent) 1px, transparent 1px)",
             backgroundSize: "64px 64px",
           }}
         />
 
         {/* Floating Technology Icons */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <motion.div className="absolute top-[20%] left-[10%] opacity-30 text-white/50 animate-float-slow" style={{ animationDelay: '0s' }}>
+          <motion.div className="absolute top-[20%] left-[10%] opacity-30 text-foreground/40 animate-float-slow" style={{ animationDelay: '0s' }}>
             <Code2 size={48} />
           </motion.div>
-          <motion.div className="absolute top-[60%] left-[15%] opacity-20 text-neutral-400 animate-float-fast" style={{ animationDelay: '1s' }}>
+          <motion.div className="absolute top-[60%] left-[15%] opacity-25 text-foreground/30 animate-float-fast" style={{ animationDelay: '1s' }}>
             <Database size={64} />
           </motion.div>
-          <motion.div className="absolute top-[30%] right-[12%] opacity-30 text-neutral-500 animate-float-slow" style={{ animationDelay: '2s' }}>
+          <motion.div className="absolute top-[30%] right-[12%] opacity-30 text-foreground/40 animate-float-slow" style={{ animationDelay: '2s' }}>
             <Cpu size={56} />
           </motion.div>
-          <motion.div className="absolute bottom-[20%] right-[20%] opacity-20 text-neutral-600 animate-float-fast" style={{ animationDelay: '3s' }}>
+          <motion.div className="absolute bottom-[20%] right-[20%] opacity-25 text-foreground/30 animate-float-fast" style={{ animationDelay: '3s' }}>
             <Layout size={40} />
           </motion.div>
         </div>
@@ -110,13 +110,13 @@ export function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-border glass-panel px-4 py-2 text-xs font-semibold tracking-wider text-muted-foreground shadow-sm"
           >
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-70" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
             </span>
             AVAILABLE FOR WORK
           </motion.div>
 
-          <motion.h2 variants={item} className="mb-2 font-mono text-lg text-primary md:text-xl">
+          <motion.h2 variants={item} className="mb-2 font-mono text-lg text-primary md:text-xl font-medium">
             Hi, my name is
           </motion.h2>
 
@@ -126,7 +126,7 @@ export function Hero() {
                        text-5xl sm:text-6xl md:text-7xl lg:text-[80px]"
           >
             Ariprakash <br className="hidden lg:block" />
-            <span className="text-glow bg-gradient-to-r from-white via-neutral-300 to-neutral-500 bg-clip-text text-transparent">
+            <span className="text-glow bg-gradient-to-r dark:from-white dark:via-neutral-300 dark:to-neutral-500 from-slate-900 via-slate-700 to-slate-500 bg-clip-text text-transparent">
               Nagaraj.
             </span>
           </motion.h1>
@@ -193,10 +193,10 @@ export function Hero() {
                 <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
                   <div>
                     <h3 className="font-heading text-xl font-bold text-foreground">Ariprakash N.</h3>
-                    <p className="font-mono text-sm text-primary mt-1">Full Stack Engineer</p>
+                    <p className="font-mono text-sm text-primary mt-1 font-medium">Full Stack Engineer</p>
                   </div>
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 border border-white/20 backdrop-blur-md">
-                    <ArrowUpRight className="h-5 w-5 text-white" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/10 border border-foreground/20 backdrop-blur-md">
+                    <ArrowUpRight className="h-5 w-5 text-foreground" />
                   </div>
                 </div>
               </div>
@@ -206,9 +206,9 @@ export function Hero() {
             <motion.div 
               animate={{ y: [0, -10, 0] }} 
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -right-8 -top-8 glass-panel p-4 rounded-2xl border-white/10 box-glow"
+              className="absolute -right-8 -top-8 glass-panel p-4 rounded-2xl border-border box-glow"
             >
-              <Terminal className="h-8 w-8 text-neutral-300" />
+              <Terminal className="h-8 w-8 text-primary" />
             </motion.div>
           </div>
         </motion.div>
